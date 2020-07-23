@@ -50,7 +50,19 @@ my_name "My name is" "Han Seol"
 ```sh
 #!/bin/bash
 declare -a array
+array=("ko","han","seol")
+#기존 배열 전체에 1개의 배열값을 추가하여 배열 저장 (배열 복사 시 사용)
+array=(${array[@]} "hi")
 
+echo "전체 출력: ${array[@]}"
+echo "배열 전체 개수 출력: ${#array[@]}"
 
+#배열 특정 요소 지우기
+unset array[2]
+echo "배열 전체 출력 : ${array[@]}"
+
+#배열의 전체 요소 지우기
+unset array
+echo "배열 전체 출력 : ${array[@]}"
 ```
 
