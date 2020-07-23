@@ -28,7 +28,7 @@ echo "-------------데이터 분석 완료------------"
 
 echo "-------------ES INDEX 삭제 시작----------"
 sleep 30s
-curl -X DELETE "220.69.209.54:9481/logstash-autolog?pretty"
+curl -X DELETE "[ESipaddress/port]/logstash-autolog?pretty"
 echo "-------------ES INDEX 삭제 완료 ---------"
 
 logstashpid=$(lsof -i:5044 | grep 'LISTEN' | awk '{print $2}')
