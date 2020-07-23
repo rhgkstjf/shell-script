@@ -11,4 +11,6 @@ shell script 기본
 ```sh
 #!/bin/bash
 echo "처음 해보는 스크립트짜기"
+printf "Hello"
+printf "%s %s" Hello hanseol
 ```
