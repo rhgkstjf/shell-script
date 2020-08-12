@@ -43,7 +43,7 @@ function my_name(){
 my_name "My name is" "Han Seol"
 ```
 
-##### 배열 - 파일명들을 가져와서 출력해보자
+##### 배열 - 배열을 활용해서 저장된 내용을 출력해보자
 * 배열 변수 사용시 반드시 괄호를 사용 Ex)${array[1]}
 * 1차원 배열만 지원함
 
@@ -64,5 +64,15 @@ echo "배열 전체 출력 : ${array[@]}"
 #배열의 전체 요소 지우기
 unset array
 echo "배열 전체 출력 : ${array[@]}"
+```
+##### 배열 활용 - 경로에 있는 파일명들을 모두 출력해보자
+```sh
+#!/bin/bash
+declare -a array
+array=$(echo /home/test/*)
+
+for A in ${array}; do
+        echo $A
+done
 ```
 
