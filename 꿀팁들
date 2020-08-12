@@ -1,0 +1,2 @@
+크론탭 수정 할 때 vim 도구 사용
+-> export VISUAL=vim; crontab -e
