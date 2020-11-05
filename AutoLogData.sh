@@ -9,7 +9,7 @@ echo "-------------파일비트로부터 데이터를 읽고 Logstash에서 필�
 
 [LogstashPath]/bin/logstash -f [LogstashPath]/config/[LogstashSampleConf] &
 [FilebeatPath]/filebeat -e -c [FilebeatPath]/filebeat.yml -d "publish" &
-sleep 5m
+sleep 30m
 
 logstashpid=$(lsof -i:5044 | grep 'LISTEN' | awk '{print $2}')
 
