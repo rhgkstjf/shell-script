@@ -76,5 +76,5 @@ for A in ${array}; do
 done
 ```
 
-# Git Commit & Push Test
-# Git pull test
+# Git Commit & Push Test 2
+# Git pull test 
